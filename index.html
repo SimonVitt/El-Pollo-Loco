@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/all-audio.js"></script>
+    <script src="models/keyboard.class.js"></script>
+    <script src="models/drawable-object.class.js"></script>
+    <script src="models/movable-object.class.js"></script>
+    <script src="models/hitbox.class.js"></script>
+    <script src="models/throwable-object.class.js"></script>
+    <script src="models/collectable-objects.class.js"></script>
+    <script src="models/status-bar.class.js"></script>
+    <script src="models/health-status-bar.class.js"></script>
+    <script src="models/coins-status-bar.class.js"></script>
+    <script src="models/bottles-status-bar.class.js"></script>
+    <script src="models/character.class.js"></script>
+    <script src="models/chicken.class.js"></script>
+    <script src="models/small-chicken.class.js"></script>
+    <script src="models/cloud.class.js"></script>
+    <script src="models/background-object.class.js"></script>
+    <script src="models/endboss.class.js"></script>
+    <script src="models/collectbottle.class.js"></script>
+    <script src="models/coin.class.js"></script>
+    <script src="models/level.class.js"></script>
+    <script src="levels/level1.js"></script>
+    <script src="models/world.class.js"></script>
+    <script src="js/game.js"></script>
+    <title>El Pollo Loco</title>
+    <link rel="icon" type="image" href="img/flavicon.png">
+</head>
+<body onload="setEventListener()">
+    <h1>El Pollo Loco</h1>
+
+    <div class="game" id="game">
+        <div id="startDiv" class="startDiv">
+            <img src="img/9_intro_outro_screens/start/startscreen_1.png">
+            <button onclick="startGame()">Play</button>
+        </div>
+    
+        <canvas id="canvas" width="720" height="480" class="d-none"></canvas>
+    
+        <div id="endDiv" class="endDiv d-none">
+            <img id="endDivImg">
+            <button onclick="returnToStart()">Again</button>
+        </div>
+        <div class="panel hideDestop">
+            <div>
+                <button id="buttonLeft"><img src="img/iconspanel/arrow-left.png"></button>
+                <button id="buttonRight"><img src="img/iconspanel/arrow-right.png"></button>
+            </div>
+            <div>
+                <button id="buttonJump"><img src="img/iconspanel/jump.png"></button>
+                <button id="buttonThrow"><img src="img/iconspanel/throw2.png" style="height: 20px; transform: rotate(20deg);"></button>
+            </div>
+        </div>
+        <div class="panel" style="top: 0; width: fit-content; right: 0;">
+            <div></div>
+            <div>
+                <button id="buttonFullscreen" onclick="showFullscreen()"><img id="buttonFullscreenImg" src="img/iconspanel/fullscreen.png"></button>
+                <button id="buttonMute" onclick="muteGame()"><img id="buttonMuteImg" src="img/iconspanel/mute.png"></button>
+            </div>
+        </div>
+    </div>
+    <div class="explanation">
+        <p>Navigation: &nbsp; &nbsp; LEFT: '&lt;' ;&nbsp; RIGHT: '&gt;' ;&nbsp; JUMP: 'SPACE' ;&nbsp; THROW: 'd'</p>
+    </div>
+</body>
+</html>
