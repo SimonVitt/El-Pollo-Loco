@@ -162,7 +162,7 @@ class Endboss extends MovableObject {
             this.lastHit = new Date().getTime();
             setTimeout(() => {
                 this.attackNow = true;
-                this.speed = 2.5;
+                this.speed = 2;
                 setTimeout(() => {
                     this.attackNow = false;
                     this.speed = 1;
