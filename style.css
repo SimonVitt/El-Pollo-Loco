@@ -116,8 +116,8 @@ canvas {
     bottom: 0;
 }
 
-.hideDestop{
-    display:none;
+.hideDestop {
+    display: none;
 }
 
 .panel div {
@@ -159,6 +159,10 @@ canvas {
     text-align: center;
 }
 
+.explanation-mobile {
+    display: none;
+}
+
 .d-none {
     display: none;
 }
@@ -172,9 +176,9 @@ canvas {
 /*just on touchscreen*/
 @media (pointer: coarse) {
     .hideDestop {
-      display: flex;
+        display: flex;
     }
-  }
+}
 
 /* smartphones -----------*/
 @media only screen and (max-width: 720px) {
@@ -210,8 +214,22 @@ canvas {
         font-size: 15px;
     }
 
-    .explanation{
+    .explanation {
         display: none;
+    }
+
+    .explanation-mobile {
+        display: unset;
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 24px;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        text-align: center;
     }
 }
 
@@ -220,7 +238,7 @@ canvas {
         display: none;
     }
 
-    .explanation{
+    .explanation {
         display: none;
     }
 }
