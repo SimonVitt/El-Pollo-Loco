@@ -12,19 +12,19 @@ class ThrowableObject extends MovableObject {
     hitbox = new Hitbox(this.x + 20, this.y + 16, this.height - 24, this.width - 40);
 
     IMAGES = [
-        'img/6_salsa_bottle/bottle_rotation/1_bottle_rotation.png',
-        'img/6_salsa_bottle/bottle_rotation/2_bottle_rotation.png',
-        'img/6_salsa_bottle/bottle_rotation/3_bottle_rotation.png',
-        'img/6_salsa_bottle/bottle_rotation/4_bottle_rotation.png'
+        'img/6_salsa_bottle/bottle_rotation/1_bottle_rotation.webp',
+        'img/6_salsa_bottle/bottle_rotation/2_bottle_rotation.webp',
+        'img/6_salsa_bottle/bottle_rotation/3_bottle_rotation.webp',
+        'img/6_salsa_bottle/bottle_rotation/4_bottle_rotation.webp'
     ];
 
     IMAGES_SPLASH = [
-        'img/6_salsa_bottle/bottle_rotation/bottle_splash/1_bottle_splash.png',
-        'img/6_salsa_bottle/bottle_rotation/bottle_splash/2_bottle_splash.png',
-        'img/6_salsa_bottle/bottle_rotation/bottle_splash/3_bottle_splash.png',
-        'img/6_salsa_bottle/bottle_rotation/bottle_splash/4_bottle_splash.png',
-        'img/6_salsa_bottle/bottle_rotation/bottle_splash/5_bottle_splash.png',
-        'img/6_salsa_bottle/bottle_rotation/bottle_splash/6_bottle_splash.png'
+        'img/6_salsa_bottle/bottle_rotation/bottle_splash/1_bottle_splash.webp',
+        'img/6_salsa_bottle/bottle_rotation/bottle_splash/2_bottle_splash.webp',
+        'img/6_salsa_bottle/bottle_rotation/bottle_splash/3_bottle_splash.webp',
+        'img/6_salsa_bottle/bottle_rotation/bottle_splash/4_bottle_splash.webp',
+        'img/6_salsa_bottle/bottle_rotation/bottle_splash/5_bottle_splash.webp',
+        'img/6_salsa_bottle/bottle_rotation/bottle_splash/6_bottle_splash.webp'
     ];
 
     breaking_sound = new Audio('audio/glass.mp3');
@@ -35,7 +35,7 @@ class ThrowableObject extends MovableObject {
      */
     constructor() {
         super();
-        this.loadImage('img/6_salsa_bottle/bottle_rotation/1_bottle_rotation.png');
+        this.loadImage('img/6_salsa_bottle/bottle_rotation/1_bottle_rotation.webp');
         this.loadImages(this.IMAGES);
         this.loadImages(this.IMAGES_SPLASH);
         allAudios.push(this.breaking_sound);

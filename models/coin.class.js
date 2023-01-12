@@ -8,7 +8,7 @@ class Coin extends CollectableObject{
     hitbox;
 
     IMAGES = [
-        'img/8_coin/coin_1.png'
+        'img/8_coin/coin_1.webp'
     ];
 
     /**

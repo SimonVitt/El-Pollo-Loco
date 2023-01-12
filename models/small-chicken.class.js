@@ -9,12 +9,12 @@ class SmallChicken extends MovableObject{
     chickenAnimateInterval;
     hitbox = new Hitbox(this.x + 10, this.y + 10, this.height -20, this.width -25);
     IMAGES_WALKING = [
-        'img/3_enemies_chicken/chicken_small/1_walk/1_w.png',
-        'img/3_enemies_chicken/chicken_small/1_walk/2_w.png',
-        'img/3_enemies_chicken/chicken_small/1_walk/3_w.png'
+        'img/3_enemies_chicken/chicken_small/1_walk/1_w.webp',
+        'img/3_enemies_chicken/chicken_small/1_walk/2_w.webp',
+        'img/3_enemies_chicken/chicken_small/1_walk/3_w.webp'
     ];
     IMAGES_DEAD = [
-        'img/3_enemies_chicken/chicken_small/2_dead/dead.png'
+        'img/3_enemies_chicken/chicken_small/2_dead/dead.webp'
     ];
 
     /**
@@ -23,11 +23,11 @@ class SmallChicken extends MovableObject{
      * loads images in imagecache
      */
     constructor(){
-        super().loadImage('img/3_enemies_chicken/chicken_small/1_walk/1_w.png');
+        super().loadImage('img/3_enemies_chicken/chicken_small/1_walk/1_w.webp');
         this.loadImages(this.IMAGES_WALKING);
         this.loadImages(this.IMAGES_DEAD);
         this.x = Math.floor(Math.random() * (3600 -600 + 1)) + 600;
-        this.speed = 1.5 + Math.random() * 4;
+        this.speed = 0.75 + Math.random() * 2;
 
         this.animate();
     }

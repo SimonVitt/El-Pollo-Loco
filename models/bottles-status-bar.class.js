@@ -8,12 +8,12 @@ class BottleStatusBar extends StatusBar{
      * different images of the bottlestatusbar, depending on how much the bar should be filled
      */
     IMAGES = [
-        'img/7_statusbars/1_statusbar/3_statusbar_bottle/orange/0.png',
-        'img/7_statusbars/1_statusbar/3_statusbar_bottle/orange/20.png',
-        'img/7_statusbars/1_statusbar/3_statusbar_bottle/orange/40.png',
-        'img/7_statusbars/1_statusbar/3_statusbar_bottle/orange/60.png',
-        'img/7_statusbars/1_statusbar/3_statusbar_bottle/orange/80.png',
-        'img/7_statusbars/1_statusbar/3_statusbar_bottle/orange/100.png'
+        'img/7_statusbars/1_statusbar/3_statusbar_bottle/orange/0.webp',
+        'img/7_statusbars/1_statusbar/3_statusbar_bottle/orange/20.webp',
+        'img/7_statusbars/1_statusbar/3_statusbar_bottle/orange/40.webp',
+        'img/7_statusbars/1_statusbar/3_statusbar_bottle/orange/60.webp',
+        'img/7_statusbars/1_statusbar/3_statusbar_bottle/orange/80.webp',
+        'img/7_statusbars/1_statusbar/3_statusbar_bottle/orange/100.webp'
     ]
 
     /**

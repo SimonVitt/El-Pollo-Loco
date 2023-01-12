@@ -9,8 +9,8 @@ class CollectBottle extends CollectableObject{
     hitbox = new Hitbox(this.x + 20, this.y + 16, this.height - 24, this.width -34);
 
     IMAGES = [
-        'img/6_salsa_bottle/1_salsa_bottle_on_ground.png',
-        'img/6_salsa_bottle/2_salsa_bottle_on_ground.png'
+        'img/6_salsa_bottle/1_salsa_bottle_on_ground.webp',
+        'img/6_salsa_bottle/2_salsa_bottle_on_ground.webp'
     ];
 
     /**

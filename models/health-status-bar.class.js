@@ -9,12 +9,12 @@ class HealthStatusBar extends StatusBar{
      * different images of the healthstatusbar, depending on how much the bar should be filled
      */
     IMAGES = [
-        'img/7_statusbars/1_statusbar/2_statusbar_health/orange/0.png',
-        'img/7_statusbars/1_statusbar/2_statusbar_health/orange/20.png',
-        'img/7_statusbars/1_statusbar/2_statusbar_health/orange/40.png',
-        'img/7_statusbars/1_statusbar/2_statusbar_health/orange/60.png',
-        'img/7_statusbars/1_statusbar/2_statusbar_health/orange/80.png',
-        'img/7_statusbars/1_statusbar/2_statusbar_health/orange/100.png'
+        'img/7_statusbars/1_statusbar/2_statusbar_health/orange/0.webp',
+        'img/7_statusbars/1_statusbar/2_statusbar_health/orange/20.webp',
+        'img/7_statusbars/1_statusbar/2_statusbar_health/orange/40.webp',
+        'img/7_statusbars/1_statusbar/2_statusbar_health/orange/60.webp',
+        'img/7_statusbars/1_statusbar/2_statusbar_health/orange/80.webp',
+        'img/7_statusbars/1_statusbar/2_statusbar_health/orange/100.webp'
     ];
 
     /**

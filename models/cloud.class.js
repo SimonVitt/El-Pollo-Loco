@@ -15,7 +15,7 @@ class Cloud extends MovableObject{
      * @param {number} x - x position of cloud 
      */
     constructor(x){
-        super().loadImage('img/5_background/layers/4_clouds/full.png');
+        super().loadImage('img/5_background/layers/4_clouds/full.webp');
         this.x = x * 720;
 
         this.animate();

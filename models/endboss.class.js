@@ -7,7 +7,7 @@ class Endboss extends MovableObject {
     x = 3600;
     height = 300;
     width = 300;
-    speed = 1;
+    speed = 0.8;
     hitbox = new Hitbox(this.x + 25, this.y + 100, this.height - 150, this.width - 70);
     triggered = false;
     attackNow = false;
@@ -17,44 +17,44 @@ class Endboss extends MovableObject {
     moveLeftInterval;
 
     IMAGES_WALKING = [
-        'img/4_enemie_boss_chicken/1_walk/G1.png',
-        'img/4_enemie_boss_chicken/1_walk/G2.png',
-        'img/4_enemie_boss_chicken/1_walk/G3.png',
-        'img/4_enemie_boss_chicken/1_walk/G4.png'
+        'img/4_enemie_boss_chicken/1_walk/G1.webp',
+        'img/4_enemie_boss_chicken/1_walk/G2.webp',
+        'img/4_enemie_boss_chicken/1_walk/G3.webp',
+        'img/4_enemie_boss_chicken/1_walk/G4.webp'
     ];
 
     IMAGES_ALERT = [
-        'img/4_enemie_boss_chicken/2_alert/G5.png',
-        'img/4_enemie_boss_chicken/2_alert/G6.png',
-        'img/4_enemie_boss_chicken/2_alert/G7.png',
-        'img/4_enemie_boss_chicken/2_alert/G8.png',
-        'img/4_enemie_boss_chicken/2_alert/G9.png',
-        'img/4_enemie_boss_chicken/2_alert/G10.png',
-        'img/4_enemie_boss_chicken/2_alert/G11.png',
-        'img/4_enemie_boss_chicken/2_alert/G12.png'
+        'img/4_enemie_boss_chicken/2_alert/G5.webp',
+        'img/4_enemie_boss_chicken/2_alert/G6.webp',
+        'img/4_enemie_boss_chicken/2_alert/G7.webp',
+        'img/4_enemie_boss_chicken/2_alert/G8.webp',
+        'img/4_enemie_boss_chicken/2_alert/G9.webp',
+        'img/4_enemie_boss_chicken/2_alert/G10.webp',
+        'img/4_enemie_boss_chicken/2_alert/G11.webp',
+        'img/4_enemie_boss_chicken/2_alert/G12.webp'
     ];
 
     IMAGES_ATTACK = [
-        'img/4_enemie_boss_chicken/3_attack/G13.png',
-        'img/4_enemie_boss_chicken/3_attack/G14.png',
-        'img/4_enemie_boss_chicken/3_attack/G15.png',
-        'img/4_enemie_boss_chicken/3_attack/G16.png',
-        'img/4_enemie_boss_chicken/3_attack/G17.png',
-        'img/4_enemie_boss_chicken/3_attack/G18.png',
-        'img/4_enemie_boss_chicken/3_attack/G19.png',
-        'img/4_enemie_boss_chicken/3_attack/G20.png',
+        'img/4_enemie_boss_chicken/3_attack/G13.webp',
+        'img/4_enemie_boss_chicken/3_attack/G14.webp',
+        'img/4_enemie_boss_chicken/3_attack/G15.webp',
+        'img/4_enemie_boss_chicken/3_attack/G16.webp',
+        'img/4_enemie_boss_chicken/3_attack/G17.webp',
+        'img/4_enemie_boss_chicken/3_attack/G18.webp',
+        'img/4_enemie_boss_chicken/3_attack/G19.webp',
+        'img/4_enemie_boss_chicken/3_attack/G20.webp',
     ];
 
     IMAGES_HURT = [
-        'img/4_enemie_boss_chicken/4_hurt/G21.png',
-        'img/4_enemie_boss_chicken/4_hurt/G22.png',
-        'img/4_enemie_boss_chicken/4_hurt/G23.png'
+        'img/4_enemie_boss_chicken/4_hurt/G21.webp',
+        'img/4_enemie_boss_chicken/4_hurt/G22.webp',
+        'img/4_enemie_boss_chicken/4_hurt/G23.webp'
     ];
 
     IMAGES_DEAD = [
-        'img/4_enemie_boss_chicken/5_dead/G24.png',
-        'img/4_enemie_boss_chicken/5_dead/G25.png',
-        'img/4_enemie_boss_chicken/5_dead/G26.png'
+        'img/4_enemie_boss_chicken/5_dead/G24.webp',
+        'img/4_enemie_boss_chicken/5_dead/G25.webp',
+        'img/4_enemie_boss_chicken/5_dead/G26.webp'
     ];
 
     chicken_sound = new Audio('audio/chicken.mp3');
@@ -64,7 +64,7 @@ class Endboss extends MovableObject {
      * loads images inot it's imagecache
      */
     constructor() {
-        super().loadImage('img/4_enemie_boss_chicken/2_alert/G5.png');
+        super().loadImage('img/4_enemie_boss_chicken/2_alert/G5.webp');
         this.loadImages(this.IMAGES_WALKING);
         this.loadImages(this.IMAGES_ALERT);
         this.loadImages(this.IMAGES_ATTACK);
@@ -162,10 +162,10 @@ class Endboss extends MovableObject {
             this.lastHit = new Date().getTime();
             setTimeout(() => {
                 this.attackNow = true;
-                this.speed = 2;
+                this.speed = 1.6;
                 setTimeout(() => {
                     this.attackNow = false;
-                    this.speed = 1;
+                    this.speed = 0.8;
                 }, 2400);
             }, 5000);
         }

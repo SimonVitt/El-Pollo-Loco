@@ -10,12 +10,12 @@ class Chicken extends MovableObject{
     chickenAnimateInterval;
     chickenMoveInterval;
     IMAGES_WALKING = [
-        'img/3_enemies_chicken/chicken_normal/1_walk/1_w.png',
-        'img/3_enemies_chicken/chicken_normal/1_walk/2_w.png',
-        'img/3_enemies_chicken/chicken_normal/1_walk/3_w.png'
+        'img/3_enemies_chicken/chicken_normal/1_walk/1_w.webp',
+        'img/3_enemies_chicken/chicken_normal/1_walk/2_w.webp',
+        'img/3_enemies_chicken/chicken_normal/1_walk/3_w.webp'
     ];
     IMAGES_DEAD = [
-        'img/3_enemies_chicken/chicken_normal/2_dead/dead.png'
+        'img/3_enemies_chicken/chicken_normal/2_dead/dead.webp'
     ];
 
     /**
@@ -24,11 +24,11 @@ class Chicken extends MovableObject{
      * loads images in imagecache
      */
     constructor(){
-        super().loadImage('img/3_enemies_chicken/chicken_normal/1_walk/1_w.png');
+        super().loadImage('img/3_enemies_chicken/chicken_normal/1_walk/1_w.webp');
         this.loadImages(this.IMAGES_WALKING);
         this.loadImages(this.IMAGES_DEAD);
         this.x = Math.floor(Math.random() * (3600 -600 + 1)) + 600;
-        this.speed = 1 + Math.random() * 4;
+        this.speed = 0.5 + Math.random() * 2;
 
         this.animate();
     }

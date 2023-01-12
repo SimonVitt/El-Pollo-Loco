@@ -45,11 +45,11 @@ function showFullscreen() {
     if (fullscreen) {
         exitFullscreen();
         fullscreen = false;
-        document.getElementById('buttonFullscreenImg').src = "img/iconspanel/fullscreen.png";
+        document.getElementById('buttonFullscreenImg').src = "img/iconspanel/fullscreen.webp";
     } else {
         enterFullscreen(document.getElementById('game'));
         fullscreen = true;
-        document.getElementById('buttonFullscreenImg').src = "img/iconspanel/exitfullscreen.png";
+        document.getElementById('buttonFullscreenImg').src = "img/iconspanel/exitfullscreen.webp";
     }
 }
 
@@ -84,11 +84,11 @@ function exitFullscreen() {
 function muteGame() {
     document.getElementById('buttonMute').blur();
     if(muted){
-        document.getElementById('buttonMuteImg').src = 'img/iconspanel/mute.png';
+        document.getElementById('buttonMuteImg').src = 'img/iconspanel/mute.webp';
         muted = false;
         allAudios.forEach(audio => {audio.muted = false});
     }else{
-        document.getElementById('buttonMuteImg').src = 'img/iconspanel/soundon.png';
+        document.getElementById('buttonMuteImg').src = 'img/iconspanel/soundon.webp';
         muted = true;
         allAudios.forEach(audio => {audio.muted = true});
     }
@@ -121,9 +121,9 @@ function showEndScreen() {
         cancelAnimationFrame(world.drawAgain);
         stopAllIntervals();
         if (world.character.isDead()) {
-            document.getElementById('endDivImg').src = 'img/9_intro_outro_screens/game_over/you lost.png';
+            document.getElementById('endDivImg').src = 'img/9_intro_outro_screens/game_over/you-lost.webp';
         } else {
-            document.getElementById('endDivImg').src = 'img/9_intro_outro_screens/game_over/game over.png';
+            document.getElementById('endDivImg').src = 'img/9_intro_outro_screens/game_over/game-over.webp';
         }
     }, 400);
 }
